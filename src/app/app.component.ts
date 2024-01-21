@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   title:string = 'AngularEduJan2024';
-  
+  showLifeCycle:Boolean=false;
+  onShowOrHide(){
+    this.showLifeCycle=!this.showLifeCycle;
+  }
 }

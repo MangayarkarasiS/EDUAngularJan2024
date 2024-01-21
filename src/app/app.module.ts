@@ -11,6 +11,9 @@ import { CounterComponent } from './counter/counter.component';
 import { FormsModule } from '@angular/forms';
 import { ColorsComponent } from './colors/colors.component';
 import { ChildcolorComponent } from './colors/childcolor/childcolor.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { StudentListComponent } from './student/student-list/student-list.component';
+import { HoverHighlightDirective } from './custom-directive/hover-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ChildcolorComponent } from './colors/childcolor/childcolor.component';
     FooterComponent,
     CounterComponent,
     ColorsComponent,
-    ChildcolorComponent
+    ChildcolorComponent,
+    LifeCycleComponent,
+    StudentListComponent,
+    HoverHighlightDirective
   ],
   imports: [
     BrowserModule,

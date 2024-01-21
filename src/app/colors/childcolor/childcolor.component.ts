@@ -9,7 +9,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ChildcolorComponent implements OnInit {
  @Input() printColor:string="";
  @Output() deleteEventEmitter=new EventEmitter();
-
+  
+ movieName="abcd";
   constructor() { }
 
   ngOnInit(): void {
