@@ -15,10 +15,10 @@
        <tr  appHoverHighlight *ngFor="let stud of allStudents" [ngClass]="{'bg-danger':stud.studTotalMarks<70}">
            <!--  <tr  *ngFor="let stud of allStudents" [ngStyle]="{'color':getMarkColor(stud.studTotalMarks)}">-->
             <td>{{stud.id}}</td>
-            <td>{{stud.studentName}}</td>
-            <td>{{stud.studTotalMarks}}</td>
-            <td></td>
-            <td>{{stud.studentDOB}}</td>
+            <td>{{stud.studentName | uppercase}}</td>
+            <td>{{stud.studTotalMarks |currency :'INR':'symbol'}}</td>
+            <td>{{stud.studTotalMarks/500 |percent}}</td>
+            <td>{{stud.studentDOB | date : 'mediumDate' |lowercase}}</td>
             <td>{{stud.studGender}}</td>
        </tr>
       </tbody>
